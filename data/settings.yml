@@ -1,0 +1,18 @@
+---
+name: "settings.csv"
+chunksize: 1000000
+compression: true
+usecols:
+  - sample_id
+  - bluetooth_enabled
+  - location_enabled
+  - power_saver_enabled
+  - flashlight_enabled
+  - nfc_enabled
+  - unknown_sources
+  - developer_mode
+plugins:
+  before:
+    - dropna
+  after:
+    - settings_dtypes

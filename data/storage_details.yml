@@ -1,0 +1,17 @@
+---
+name: "storage_details.csv"
+chunksize: 1000000
+compression: true
+usecols:
+  - sample_id
+  - free
+  - total
+  - free_external
+  - total_external
+  - free_system
+  - total_system
+  - free_secondary
+  - total_secondary
+plugins:
+  before:
+    - dropna

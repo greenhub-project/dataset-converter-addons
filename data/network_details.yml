@@ -1,0 +1,22 @@
+---
+name: "network_details.csv"
+chunksize: 1000000
+compression: true
+usecols:
+  - sample_id
+  - network_type
+  - mobile_network_type
+  - mobile_data_status
+  - mobile_data_activity
+  - roaming_enabled
+  - wifi_status
+  - wifi_signal_strength
+  - wifi_link_speed
+  - wifi_ap_status
+  - network_operator
+  - sim_operator
+  - mcc
+  - mnc
+plugins:
+  before:
+    - dropna

@@ -1,0 +1,15 @@
+---
+name: "devices.csv"
+compression: true
+usecols:
+  - id
+  - model
+  - manufacturer
+  - brand
+  - product
+  - os_version
+  - kernel_version
+  - is_root
+plugins:
+  before:
+    - dropna

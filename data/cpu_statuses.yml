@@ -1,0 +1,12 @@
+---
+name: "cpu_statuses.csv"
+chunksize: 1000000
+compression: true
+usecols:
+  - sample_id
+  - usage
+  - up_time
+  - sleep_time
+plugins:
+  before:
+    - dropna
