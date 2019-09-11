@@ -1,0 +1,11 @@
+name: "app_processes.csv"
+chunksize: 1000000
+compression: false
+partition: true
+usecols:
+  - sample_id
+  - name
+  - application_label
+  - is_system_app
+  - importance
+  - version_code
